@@ -4,6 +4,7 @@ import './PostShare.css';
 import { AiOutlineCalendar, AiOutlinePicture } from 'react-icons/ai'
 import { MdVideoLibrary } from 'react-icons/md'
 import { GrLocation } from 'react-icons/gr'
+import {FaTimes} from 'react-icons/fa'
 
 
 const PostShare = () => {
@@ -26,11 +27,11 @@ const PostShare = () => {
           <div className = 'holder'>
             <input className = 'inputShare' type = 'text' placeholder = "What's happening" />
             <div className = 'postOptions'>
-                <div className='option'>
+                <div className='option' onClick = {() => imageRef.current.click()}>
                     < AiOutlinePicture className = 'media' style = {{color: 'var(--photo)'}}/>
                     <span>Photo</span>
                 </div>
-                <div className='option' onClick = {() => imageRef.current.click()} >
+                <div className='option'  >
                     < MdVideoLibrary className = 'media' style = {{color: 'var(--video)'}} />
                     <span>Video</span>
                 </div>
@@ -52,7 +53,8 @@ const PostShare = () => {
               {
                   image && (
                       <div className='previewImage'>
-                        cancel
+                          <FaTimes className = 'timesIcon' onClick={ () => setImage(null) } />
+                          <img src = {image.image} alt = 'selected' />
                       </div>
                   )
               }
