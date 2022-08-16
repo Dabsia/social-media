@@ -1,0 +1,74 @@
+.postShare{
+    display: flex;
+    gap: 1rem;
+    background-color: var(--cardColor);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.postShare > img {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+.holder{
+    /* background-color: red; */
+    width: 100%;
+}
+
+.inputShare{
+    background-color: var(--inputColor);
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    width: 90%;
+}
+.postOptions{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.option{
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 10px;
+
+}
+.option > span{
+    font-size: 14px;
+}
+.option:hover{
+    cursor: pointer;
+}
+.media{
+    font-size: 20px;
+}
+.ps-button{
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    color:#fff;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    background: var(--buttonBg);
+    transition: all 100ms ease-in-out;
+
+}
+.ps-button:hover {
+    background: transparent;
+    color: var(--orange);
+    border: 2px solid var(--orange);
+}
