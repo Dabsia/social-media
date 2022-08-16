@@ -4,6 +4,7 @@ import Profile from '../../Assets/dabo.jpg'
 import './ProfileCard.css'
 
 const ProfileCard = () => {
+  const profilePanel = true
   return (
     <div className = 'profileCard'>
           <div className='profileImages'>
@@ -18,14 +19,26 @@ const ProfileCard = () => {
               <hr />
               <div>
                   <div className='follow'>
-                      <span className = 'followNum'>1,100</span>
-                        <span className = 'followDesc'>Following</span>
+                    <span className = 'followNum'>1,100</span>
+                    <span className = 'followDesc'>Following</span>
                   </div>
                   <div className  = 'vl' />
                   <div className='follow'>
-                      <span className = 'followNum'>12,000</span>
-                        <span className = 'followDesc'>Followers</span>
+                    <span className = 'followNum'>12,000</span>
+                    <span className = 'followDesc'>Followers</span>
                   </div>
+          
+          
+            {profilePanel && (
+              <>
+                <div className='vl' />
+                 <div className='follow'>
+                      <span className = 'followNum'>3</span>
+                        <span className = 'followDesc'>Posts</span>
+                  </div>
+              </>
+            )}
+          
               </div>
             <hr />
           </div>
