@@ -2,9 +2,10 @@ import React from 'react'
 import Cover from '../../Assets/cover.jpg'
 import Profile from '../../Assets/dabo.jpg'
 import './ProfileCard.css'
+import { Link } from 'react-router-dom'
 
-const ProfileCard = () => {
-  const profilePanel = true
+const ProfileCard = ({profilePanel}) => {
+  
   return (
     <div className = 'profileCard'>
           <div className='profileImages'>
@@ -13,7 +14,7 @@ const ProfileCard = () => {
           </div>
           <div className='profileName'>
             <span className = 'name'>Dabsia Johnson</span>
-            <span className = 'role'>Senior Software Deveoper</span>
+            <span className = 'role'>Software Engineering</span>
           </div>
           <div className='followstatus'>
               <hr />
@@ -41,10 +42,14 @@ const ProfileCard = () => {
           
               </div>
             <hr />
-          </div>
+      </div>
+      {profilePanel ? '' : 
+        <Link className = 'link' to = '/profile' >
           <span className = 'myProfile'>
             My Profile
           </span>
+        </Link>
+      }
     </div>
   )
 }

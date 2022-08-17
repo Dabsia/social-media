@@ -80,3 +80,8 @@ hr{
     align-self: center;
     justify-self: center;
 }
+.link{
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}

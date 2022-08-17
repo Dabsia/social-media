@@ -1,0 +1,38 @@
+.auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    gap: 4rem;
+    position: relative;
+}
+.auth > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a-leftt{
+    gap: 2rem;
+}
+
+.a-leftt > img {
+    width: 4rem;
+    height: 4rem;
+}
+.webName > h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background-color: red;
+    background-image: var(--buttonBg);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.webName > h6 {
+    font-size: .85rem;
+}

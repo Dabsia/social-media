@@ -19,3 +19,7 @@
     align-items: flex-start;
     gap: 1rem
 }
+.likes{
+    color: var(--gray);
+    font-size: 12px
+}
