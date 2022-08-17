@@ -1,7 +1,8 @@
 import React from 'react'
 import './Auth.css'
 import Logo from '../../Assets/logo.png'
-import Authentication from '../../Components/Authentication/Authentication'
+import SignUp from '../../Components/SignUp/SignUp'
+import LogIn from '../../Components/LogIn/Login'
 
 const Auth = () => {
   return (
@@ -13,7 +14,10 @@ const Auth = () => {
                   <h6>Explore ideas around the world</h6>
               </div>
           </div>
-          <Authentication />
+          <div className = 'authForm'>
+            
+            <LogIn />
+          </div>
       </div>
   )
 }

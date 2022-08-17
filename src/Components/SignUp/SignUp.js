@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import './Authentication.css'
+import './SignUp.css'
 
 
 const Authentication = () => {
@@ -20,7 +19,7 @@ const Authentication = () => {
                       <input type = 'password' placeholder = 'Confirm Password' className = 'infoInput' name = 'conpassword' />
                 </div>
                 <div>
-                    <span>Already have an account? Login </span>
+                    <span style = {{fontSize: '12px'}}>Already have an account? Login </span>
                 </div>
                 <button className = 'button infoBtn'>Create Account</button>
             </form>

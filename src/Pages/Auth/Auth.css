@@ -36,3 +36,13 @@
 .webName > h6 {
     font-size: .85rem;
 }
+.authForm{
+    background-color: var(--cardColor);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.authForm > div {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}

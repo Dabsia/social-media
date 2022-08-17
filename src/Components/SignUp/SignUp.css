@@ -15,17 +15,21 @@
     
     
 }
-.username{
-    width: 90%;
-}
+
 .infoInput > div{
     display: flex;
     gap: 1rem;
     width: 90%;
     height: 2rem;
 }
+
 .innerInputHolder{
-    width: 100%;
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+    width: 90%;
+    height: 2rem;
+    justify-content: flex-start;
 }
 .infoBtn{
     width: 10rem;
